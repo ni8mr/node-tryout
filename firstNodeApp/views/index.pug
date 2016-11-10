@@ -6,15 +6,14 @@ block content
   p
   p
   p Enter a random word below
-  input(
-    type='text'
-    id='submit_field'
-  )
-  form
+  form(action='/after-post', method='post')
+    input(
+      type='text'
+      name='text_field'
+      id='text_field'
+    )
     input(
       type='submit'
-      value='Post it to server'
-      id='post_button'
+      value='Post it to a server'
     )
   script(type='text/javascript' src='/javascripts/home.js')
-  

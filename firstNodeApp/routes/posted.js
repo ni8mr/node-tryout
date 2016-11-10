@@ -1,14 +1,13 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var router = express.Router();
-var app = express()
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('post_template', { title: 'Response page' });
+// /* GET home page. */
+router.get('/after-post', function(req, res, next) {
+	var user = {
+		authorised: false
+	};
+	res.render('post_template', user);
 });
-
-
-
 
 module.exports = router;
