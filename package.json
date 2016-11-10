@@ -1,0 +1,26 @@
+{
+  "name": "node-tryout",
+  "version": "1.0.0",
+  "description": "A test app for nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ni8mr/node-tryout.git"
+  },
+  "author": "ni8mr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ni8mr/node-tryout/issues"
+  },
+  "homepage": "https://github.com/ni8mr/node-tryout#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "engines": {
+    "node": "7.0.0"
+  }
+}
