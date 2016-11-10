@@ -1,10 +1,14 @@
 extends layout
 
+block scripts
+  script(src='/javascripts/post_template.js')
+
 block content
   if authorised
     h1 Welcome to the Response page
-    p
+    p(id='response')
   else
     h1 You can not see this page
 
-  script(type='text/javascript' src='/javascripts/post_template.js')
+block footer
+  p This is response page footer

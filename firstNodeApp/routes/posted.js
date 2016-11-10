@@ -10,4 +10,8 @@ router.get('/after-post', function(req, res, next) {
 	res.render('post_template', user);
 });
 
+router.get('/', function(req, res, next) {
+	res.redirect('/index');
+});
+
 module.exports = router;
